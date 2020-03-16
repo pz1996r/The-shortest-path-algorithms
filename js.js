@@ -1,6 +1,6 @@
 var web = {
 
-  axisRange: 100,
+  axisRange: 60,
 
   cor: {},
 
@@ -197,6 +197,7 @@ var web = {
   // Porównanie algorytmów
 
   compare: function () {
+    console.log('compare');
     var aA = web.createAngleArr()
     var aN = web.createNearestArr()
 
@@ -225,15 +226,14 @@ var web = {
     ctx.strokeStyle = "#eaeaea"
     ctx.lineWidth = 1
 
-    var netArr = [
-      [0, 0],
-      [0, 100],
-      [5, 100],
-      [5, 0],
-      [10, 0],
-      [10, 100]
-
-    ]
+    // var netArr = [
+    //   [0, 0],
+    //   [0, 100],
+    //   [5, 100],
+    //   [5, 0],
+    //   [10, 0],
+    //   [10, 100]
+    // ]
     var sn = document.getElementById('setnet').value
     var sn = sn * 5
     for (var i = 0; i < web.axisRange; i++) {

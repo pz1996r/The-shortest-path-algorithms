@@ -230,18 +230,21 @@ input.inpe {
 }
 
 #wyniki {
-    position: fixed;
+    /* position: fixed;
     top: 0px;
-    left: 25%;
+    left: 25%; */
 }
 
 #wykres {
-    position: fixed;
+    /* position: fixed;
     top: 0px;
     left: 50%;
-    width: 500px;
+    width: 500px; */
 }
-
+.wykresy{
+    width: 300px;
+    position: relative;
+}
 .poz .img {
     display: inline-block;
 }
@@ -255,7 +258,10 @@ input.inpe {
     height: 60px;
 }
 
-#container {}
+#container {
+    display: flex;
+    justify-content: center;
+}
 
 input#setnet {
     width: 35px;
@@ -284,14 +290,26 @@ input#setnet {
 }
 
 #wykres {
-    min-height: 500px;
-    min-height: 500px;
+    /* min-height: 500px;
+    min-height: 500px; */
+    min-height: 300px;
+    min-height: 300px;
 }
 
 #can {
-    min-height: 500px;
-    min-height: 500px;
-    position: fixed;
+    /* min-height: 500px;
+    min-height: 500px; */
+    min-height: 300px;
+    min-height: 300px;
+    /* position: fixed;
     top: 0;
-    right: 0;
+    right: 0; */
 }
+
+
+@media (max-width: 630px) {
+    #container {
+        align-items: center; 
+        flex-direction: column;
+    }
+  }

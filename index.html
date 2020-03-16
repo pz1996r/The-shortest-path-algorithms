@@ -26,64 +26,60 @@
 			</div>
 
 
-			<div id="can">
-			</div>
 			<div id="auto2" onclick="web.buildCor()">ZNAJDŹ</div>
+		</div>
 
+		<div id="wyniki">
+			<h1>WYNIKI</h1>
 
-			<div id="wyniki">
-				<h1>WYNIKI</h1>
+			<div class="poz">
+				<img src="" alt="">
+				<div class="wynik">
+					<p id="bp"></p>
+				</div>
+				<div id="btnB" class="on" onclick="web.showBlue()">
+					<div id="ibtnB"></div>
+				</div>
+			</div>
 
-				<div class="poz">
-					<img src="" alt="">
-					<div class="wynik">
-						<p id="bp"></p>
-					</div>
-
-					<div id="btnB" class="on" onclick="web.showBlue()">
-						<div id="ibtnB"></div>
-
-					</div>
-
+			<div class="poz">
+				<img src="" alt="">
+				<div class="wynik">
+					<p id="np"></p>
 				</div>
 
-				<div class="poz">
-					<img src="" alt="">
-					<div class="wynik">
-						<p id="np"></p>
-					</div>
-
-					<div id="btnR" class="on" onclick="web.showRed()">
-						<div id="ibtnR"></div>
-					</div>
-
-
+				<div id="btnR" class="on" onclick="web.showRed()">
+					<div id="ibtnR"></div>
 				</div>
+			</div>
 
-				<div class="poz">
-					<img src="" alt="">
-
-					<div class="wynik">
-						Siatka
-					</div>
-
-
-					<div id="btnS" class="on" onclick="web.showNet()">
-						<div id="ibtnS"></div>
-					</div>
-
-					<div class="poz" id="marginset">
-						<div class="wynik">
-							Gęstość siatki
-						</div>
-						<input type="number" id="setnet">
-						<div id="ok" onclick="web.compare()">OK</div>
-					</div>
-
+			<div class="poz">
+				<div class="wynik">
+					Siatka
 				</div>
+				<div id="btnS" class="on" onclick="web.showNet()">
+					<div id="ibtnS"></div>
+				</div>
+			</div>
+
+			<div class="poz" id="marginset">
+				<div class="wynik">
+					Gęstość siatki
+				</div>
+				<input type="number" id="setnet" value=3>
+				<div id="ok" onclick="web.compare()">OK</div>
+			</div>
+			<!-- wykresy !!! -->
+			<div class="wykresy">
 				<div id="wykres"></div>
+				<div id="can"></div>
 			</div>
 		</div>
+
+
+
+	</div>
+
 </body>
 
 </html>

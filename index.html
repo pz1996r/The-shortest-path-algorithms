@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ścieżka</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="cor">
+			<h1>KOORDYNATY</h1>
+			<div id="form">
+			</div>
+
+			<div id="dodaj" onclick="web.addCor()">+</div>
+			<div class="fl">
+				<input type="number">
+				<div id="auto" onclick="web.genCor(this)">AUTO</div>
+			</div>
+
+
+			<div id="can">
+			</div>
+			<div id="auto2" onclick="web.buildCor()">ZNAJDŹ</div>
+
+
+			<div id="wyniki">
+				<h1>WYNIKI</h1>
+
+				<div class="poz">
+					<img src="" alt="">
+					<div class="wynik">
+						<p id="bp"></p>
+					</div>
+
+					<div id="btnB" class="on" onclick="web.showBlue()">
+						<div id="ibtnB"></div>
+
+					</div>
+
+				</div>
+
+				<div class="poz">
+					<img src="" alt="">
+					<div class="wynik">
+						<p id="np"></p>
+					</div>
+
+					<div id="btnR" class="on" onclick="web.showRed()">
+						<div id="ibtnR"></div>
+					</div>
+
+
+				</div>
+
+				<div class="poz">
+					<img src="" alt="">
+
+					<div class="wynik">
+						Siatka
+					</div>
+
+
+					<div id="btnS" class="on" onclick="web.showNet()">
+						<div id="ibtnS"></div>
+					</div>
+
+					<div class="poz" id="marginset">
+						<div class="wynik">
+							Gęstość siatki
+						</div>
+						<input type="number" id="setnet">
+						<div id="ok" onclick="web.compare()">OK</div>
+					</div>
+
+				</div>
+				<div id="wykres"></div>
+			</div>
+		</div>
+</body>
+
+</html>

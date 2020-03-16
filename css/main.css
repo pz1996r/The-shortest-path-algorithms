@@ -1,0 +1,297 @@
+body {
+    font-family: 'Niramit', sans-serif;
+}
+
+.inl {
+    display: inline-block;
+    width: 20px;
+}
+
+
+canvas {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#blue.on {
+    opacity: 0.5;
+}
+
+#blue.off {
+    opacity: 0;
+}
+
+
+#net.on {
+    opacity: 0.5;
+}
+
+#net.off {
+    opacity: 0;
+}
+
+
+#red.on {
+    opacity: 1;
+}
+
+#red.off {
+    opacity: 0;
+}
+
+#btnB {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+}
+
+#ibtnB {
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    margin-top: 1px;
+    width: 40px;
+    height: 28px;
+    background: white;
+    border-radius: 90px;
+    transition: ease-in;
+    left: 1px;
+}
+
+#btnB.on #ibtnB {
+    transition: 0.5s ease-in-out;
+    left: 1px;
+}
+
+#btnB.off #ibtnB {
+    transition: 0.5s ease-in-out;
+    left: 49%;
+}
+
+
+#btnR {
+    position: relative;
+    transition: 0.5s ease-in-out;
+    width: 80px;
+    height: 30px;
+    border-radius: 90px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#ibtnR {
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    margin-top: 1px;
+    width: 40px;
+    height: 28px;
+    background: white;
+    border-radius: 90px;
+    transition: ease-in;
+    left: 1px;
+}
+
+#btnR.on #ibtnR {
+    left: 1px;
+    transition: 0.5s ease-in-out;
+}
+
+#btnR.off #ibtnR {
+    left: 49%;
+    transition: 0.5s ease-in-out;
+}
+
+#btnR.on,
+#btnB.on,
+#btnS.on {
+    background: #008003;
+}
+
+#btnR.off,
+#btnB.off,
+#btnS.off {
+    background: #e00c0c;
+}
+
+#btnS {
+    position: relative;
+    width: 80px;
+    transition: 0.5s ease-in-out;
+    height: 30px;
+    border-radius: 90px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#ibtnS {
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    margin-top: 1px;
+    width: 40px;
+    height: 28px;
+    background: white;
+    border-radius: 90px;
+    transition: ease-in;
+    left: 1px;
+
+}
+
+#btnS.on #ibtnS {
+    left: 1px;
+}
+
+#btnS.off #ibtnS {
+    left: 49%;
+}
+
+
+input {
+    background: #f1f1f1;
+    border: 0px;
+    border-radius: 45px;
+    height: 25px;
+    width: 35px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+#dodaj {
+    display: inline-block;
+    background: purple;
+    height: 25px;
+    width: 35px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    border-radius: 45px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#auto {
+    display: inline-block;
+    background: purple;
+    height: 25px;
+    width: 55px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 45px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+#auto2 {
+    display: inline-block;
+    background: purple;
+    height: 25px;
+    width: 90px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    border-radius: 45px;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input.inpe {
+    display: inline-block;
+}
+
+.fl {
+    display: inline-block;
+
+}
+
+#cor {
+    width: 300px;
+}
+
+#cor h1 {
+    text-align: center;
+}
+
+#wyniki {
+    position: fixed;
+    top: 0px;
+    left: 25%;
+}
+
+#wykres {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    width: 500px;
+}
+
+.poz .img {
+    display: inline-block;
+}
+
+.poz .wynik {
+    display: inline-block;
+    width: 200px;
+}
+
+.poz {
+    height: 60px;
+}
+
+#container {}
+
+input#setnet {
+    width: 35px;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center;
+    padding-left: 14px;
+}
+
+#marginset {
+    margin-top: 30px;
+}
+
+#ok {
+    display: inline-block;
+    background: purple;
+    height: 27px;
+    width: 37px;
+    margin-left: 5px;
+    border-radius: 45px;
+    text-align: center;
+    color: white;
+    line-height: 27px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#wykres {
+    min-height: 500px;
+    min-height: 500px;
+}
+
+#can {
+    min-height: 500px;
+    min-height: 500px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
